@@ -1,0 +1,33 @@
+@import "_partials/_typography";
+@import "_partials/_reset";
+@import "_variables";
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../../assets/fonts/Merriweather-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../../assets/fonts/Merriweather-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../../assets/fonts/Merriweather-Light.ttf") format('truetype');
+}
+
+@media (max-width: 1300px) {
+  html {
+    font-size: 9px;
+  }
+}

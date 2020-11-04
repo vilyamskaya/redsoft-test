@@ -1,0 +1,13 @@
+@import "../_variables";
+
+html {
+  font-size: 10px;
+}
+
+body {
+  color: $color-default;
+  font-family: 'Merriweather', serif;
+  font-size: 1.4rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

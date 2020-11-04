@@ -1,0 +1,32 @@
+@import "variables";
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content
+  }
+  &:-moz-placeholder {
+    @content
+  }
+  &::-moz-placeholder {
+    @content
+  }
+  &:-ms-input-placeholder {
+    @content
+  }
+  &::placeholder {
+    color: $color-placeholder;
+  }
+}
+
+@mixin normal-btn {
+  background: $color-brown;
+  height: 4.8rem;
+  width: 11.8rem;
+  color: $color-btn-text;
+  font-family: 'Merriweather', serif;
+  font-weight: $weight-bold;
+  &:hover {
+    background: $color-brown-hover;
+    transition: all 0.3s ease;
+  }
+}

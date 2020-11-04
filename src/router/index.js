@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import catalog from '../components/Catalog'
+import Catalog from '../components/Catalog'
 
 Vue.use(Router)
 
@@ -9,7 +9,27 @@ export default new Router({
         {
             path: '/',
             name: 'catalog',
-            component: catalog
-        }
+            component: Catalog
+        },
+        {
+            path: '/delivery',
+            name: 'delivery',
+            component: Catalog
+        },
+        {
+            path: '/pay',
+            name: 'pay',
+            component: Catalog
+        },
+        {
+            path: '/contacts',
+            name: 'contacts',
+            component: Catalog
+        },
+        {
+            path: '/about',
+            name: 'about',
+            component: Catalog
+        },
     ]
 })
