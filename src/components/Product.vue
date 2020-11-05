@@ -46,7 +46,6 @@
     .product {
         border: 1px solid $color-border;
         margin: 0 1.6rem;
-        min-width: 28rem;
 
         &:hover {
             border-color: $color-border-active;
