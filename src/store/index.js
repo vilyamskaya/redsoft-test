@@ -48,8 +48,6 @@ export default new Vuex.Store({
         ],
         cart: cart ? JSON.parse(cart) : []
     },
-    getters: {
-    },
     mutations: {
         pushToCart(state, item) {
             item.cartState = 'in cart'
@@ -66,7 +64,7 @@ export default new Vuex.Store({
             setTimeout(() => axios.get('https://jsonplaceholder.typicode.com/posts/1')
                 .then(commit('pushToCart', item))
                 .then(commit('saveCart'))
-                .catch(err => console.log(err)), 2000)
+                .catch(err => console.log(err)), 2000) // setTimeout использован для видимости лоадера на кнопке
         }
     }
 })
