@@ -87,6 +87,7 @@
 
             &-old {
                 color: $color-old-price;
+                font-weight: $weight-light;
                 text-decoration: line-through;
             }
         }
